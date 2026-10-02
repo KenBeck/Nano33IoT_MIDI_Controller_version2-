@@ -1,0 +1,491 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2907
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 LucidaGrande;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red255\green255\blue255;\red252\green252\blue247;
+\red249\green243\blue230;\red220\green176\blue98;\red158\green166\blue178;\red179\green173\blue165;\red86\green164\blue241;
+\red195\green134\blue79;\red31\green28\blue27;\red47\green44\blue42;}
+{\*\expandedcolortbl;;\cssrgb\c0\c1\c1;\cssrgb\c100000\c100000\c100000;\cssrgb\c99074\c99065\c97442;
+\cssrgb\c98117\c96112\c92147;\cssrgb\c89402\c74158\c45976;\cssrgb\c68114\c70918\c75172;\cssrgb\c75582\c73193\c70684;\cssrgb\c40368\c71006\c95615;
+\cssrgb\c81336\c59426\c38013;\cssrgb\c16078\c14510\c14118;\cssrgb\c24314\c22745\c21569;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}}
+\margl1440\margr1440\vieww11540\viewh18380\viewkind0
+\deftab720
+\pard\pardeftab720\sa350\partightenfactor0
+
+\f0\fs20 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\
+\pard\pardeftab720\sl120\slmult1\partightenfactor0
+\cf2 How do I change MIDI channels, note numbers in this sketch?\
+\pard\pardeftab720\sa350\partightenfactor0
+\cf2 The note numbers, CC numbers, and MIDI channels are set in the constructor definitions at the top of your sketch. Each control's parameters are right there in the code.\
+\pard\pardeftab720\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sa280\partightenfactor0
+\cf2 Understanding the Parameters\
+\pard\pardeftab720\sa167\partightenfactor0
+\cf2 Directly Connected Buttons\
+\pard\pardeftab720\partightenfactor0
+\cf2 Button\cf2 (pin, command, value, channel, debounce)\cf2 \
+\pard\pardeftab720\qc\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sa350\partightenfactor0
+\cf2 Current example:\
+\pard\pardeftab720\partightenfactor0
+\cf2 Button \cf2 BU1\cf2 (\cf2 6\cf2 , \cf2 2\cf2 , \cf2 3\cf2 , \cf2 1\cf2 , \cf2 5\cf2 );\cf2 \
+\pard\pardeftab720\qc\partightenfactor0
+\cf2 \
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \tamart480 \tamarb480 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clcbpat11 \clwWidth2115\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx2880
+\clvertalb \clcbpat11 \clwWidth5567\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx5760
+\clvertalb \clcbpat11 \clwWidth2617\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 Parameter\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 Meaning\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 Current Value\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \tamart480 \tamarb480 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt\clvertalbase \clshdrawnil \clwWidth2115\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx2880
+\clvertalt\clvertalbase \clshdrawnil \clwWidth5567\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx5760
+\clvertalt\clvertalbase \clshdrawnil \clwWidth2617\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 pin\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 Physical pin\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 6\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \tamart480 \tamarb480 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt\clvertalbase \clshdrawnil \clwWidth2115\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx2880
+\clvertalt\clvertalbase \clshdrawnil \clwWidth5567\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx5760
+\clvertalt\clvertalbase \clshdrawnil \clwWidth2617\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 command\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 Type: 0=Note, 1=CC, 2=Toggle CC\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 2 (Toggle CC)\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \tamart480 \tamarb480 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt\clvertalbase \clshdrawnil \clwWidth2115\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx2880
+\clvertalt\clvertalbase \clshdrawnil \clwWidth5567\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx5760
+\clvertalt\clvertalbase \clshdrawnil \clwWidth2617\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 value\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 Note # or CC#\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 3\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \tamart480 \tamarb480 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt\clvertalbase \clshdrawnil \clwWidth2115\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx2880
+\clvertalt\clvertalbase \clshdrawnil \clwWidth5567\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx5760
+\clvertalt\clvertalbase \clshdrawnil \clwWidth2617\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 channel\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 MIDI channel 1-16\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 1\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \tamart480 \tamarb480 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalt\clvertalbase \clshdrawnil \clwWidth2115\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx2880
+\clvertalt\clvertalbase \clshdrawnil \clwWidth5567\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx5760
+\clvertalt\clvertalbase \clshdrawnil \clwWidth2617\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 debounce\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 Debounce time in ms\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 5\cell \lastrow\row
+\pard\pardeftab720\sa350\partightenfactor0
+\cf2 To change: Edit the numbers directly. For example, to make BU1 send Note 60 on channel 3:\
+\pard\pardeftab720\partightenfactor0
+\cf2 Button \cf2 BU1\cf2 (\cf2 6\cf2 , \cf2 0\cf2 , \cf2 60\cf2 , \cf2 3\cf2 , \cf2 5\cf2 );\cf2 \
+\pard\pardeftab720\qc\partightenfactor0
+\cf2 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sa167\partightenfactor0
+\cf2 Directly Connected Pots\
+\pard\pardeftab720\partightenfactor0
+\cf2 Pot\cf2 (pin, command, control, channel)\cf2 \
+\pard\pardeftab720\qc\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sa350\partightenfactor0
+\cf2 Current example:\
+\pard\pardeftab720\partightenfactor0
+\cf2 Pot \cf2 PO1\cf2 (A0, \cf2 0\cf2 , \cf2 4\cf2 , \cf2 1\cf2 );\cf2 \
+\pard\pardeftab720\qc\partightenfactor0
+\cf2 \
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \tamart480 \tamarb480 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clcbpat11 \clwWidth2651\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx2880
+\clvertalb \clcbpat11 \clwWidth4367\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx5760
+\clvertalb \clcbpat11 \clwWidth3281\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 Parameter\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 Meaning\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 Current Value\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \tamart480 \tamarb480 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt\clvertalbase \clshdrawnil \clwWidth2651\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx2880
+\clvertalt\clvertalbase \clshdrawnil \clwWidth4367\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx5760
+\clvertalt\clvertalbase \clshdrawnil \clwWidth3281\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 pin\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 Analog pin\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 A0\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \tamart480 \tamarb480 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt\clvertalbase \clshdrawnil \clwWidth2651\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx2880
+\clvertalt\clvertalbase \clshdrawnil \clwWidth4367\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx5760
+\clvertalt\clvertalbase \clshdrawnil \clwWidth3281\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 command\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 Future use (leave 0)\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 0\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \tamart480 \tamarb480 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt\clvertalbase \clshdrawnil \clwWidth2651\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx2880
+\clvertalt\clvertalbase \clshdrawnil \clwWidth4367\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx5760
+\clvertalt\clvertalbase \clshdrawnil \clwWidth3281\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 control\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 CC number 0-127\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 4\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \tamart480 \tamarb480 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalt\clvertalbase \clshdrawnil \clwWidth2651\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx2880
+\clvertalt\clvertalbase \clshdrawnil \clwWidth4367\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx5760
+\clvertalt\clvertalbase \clshdrawnil \clwWidth3281\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 channel\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 MIDI channel 1-16\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 1\cell \lastrow\row
+\pard\pardeftab720\sa350\partightenfactor0
+\cf2 To change: For example, to make PO1 control CC#20 on channel 2:\
+\pard\pardeftab720\partightenfactor0
+\cf2 Pot \cf2 PO1\cf2 (A0, \cf2 0\cf2 , \cf2 20\cf2 , \cf2 2\cf2 );\cf2 \
+\pard\pardeftab720\qc\partightenfactor0
+\cf2 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sa167\partightenfactor0
+\cf2 Multiplexed Buttons\
+\pard\pardeftab720\partightenfactor0
+\cf2 Button\cf2 (Mux mux, muxpin, command, value, channel, debounce)\cf2 \
+\pard\pardeftab720\qc\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sa350\partightenfactor0
+\cf2 Current example:\
+\pard\pardeftab720\partightenfactor0
+\cf2 Button \cf2 MBU1\cf2 (M1, \cf2 0\cf2 , \cf2 0\cf2 , \cf2 36\cf2 , \cf2 10\cf2 , \cf2 5\cf2 );\cf2 \
+\pard\pardeftab720\qc\partightenfactor0
+\cf2 \
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \tamart480 \tamarb480 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clcbpat11 \clwWidth2319\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx2880
+\clvertalb \clcbpat11 \clwWidth5110\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx5760
+\clvertalb \clcbpat11 \clwWidth2870\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 Parameter\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 Meaning\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 Current Value\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \tamart480 \tamarb480 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt\clvertalbase \clshdrawnil \clwWidth2319\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx2880
+\clvertalt\clvertalbase \clshdrawnil \clwWidth5110\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx5760
+\clvertalt\clvertalbase \clshdrawnil \clwWidth2870\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 mux\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 Which mux (M1 or M2)\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 M1\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \tamart480 \tamarb480 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt\clvertalbase \clshdrawnil \clwWidth2319\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx2880
+\clvertalt\clvertalbase \clshdrawnil \clwWidth5110\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx5760
+\clvertalt\clvertalbase \clshdrawnil \clwWidth2870\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 muxpin\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 Mux pin 0-15\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 0\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \tamart480 \tamarb480 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt\clvertalbase \clshdrawnil \clwWidth2319\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx2880
+\clvertalt\clvertalbase \clshdrawnil \clwWidth5110\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx5760
+\clvertalt\clvertalbase \clshdrawnil \clwWidth2870\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 command\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 0=Note, 1=CC, 2=Toggle CC\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 0 (Note)\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \tamart480 \tamarb480 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt\clvertalbase \clshdrawnil \clwWidth2319\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx2880
+\clvertalt\clvertalbase \clshdrawnil \clwWidth5110\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx5760
+\clvertalt\clvertalbase \clshdrawnil \clwWidth2870\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 value\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 Note number\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 36\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \tamart480 \tamarb480 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt\clvertalbase \clshdrawnil \clwWidth2319\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx2880
+\clvertalt\clvertalbase \clshdrawnil \clwWidth5110\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx5760
+\clvertalt\clvertalbase \clshdrawnil \clwWidth2870\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 channel\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 MIDI channel\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 10\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \tamart480 \tamarb480 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalt\clvertalbase \clshdrawnil \clwWidth2319\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx2880
+\clvertalt\clvertalbase \clshdrawnil \clwWidth5110\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx5760
+\clvertalt\clvertalbase \clshdrawnil \clwWidth2870\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 debounce\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 Debounce ms\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 5\cell \lastrow\row
+\pard\pardeftab720\sa350\partightenfactor0
+\cf2 To change: For example, to make MBU1 send Note 48 on channel 1:\
+\pard\pardeftab720\partightenfactor0
+\cf2 Button \cf2 MBU1\cf2 (M1, \cf2 0\cf2 , \cf2 0\cf2 , \cf2 48\cf2 , \cf2 1\cf2 , \cf2 5\cf2 );\cf2 \
+\pard\pardeftab720\qc\partightenfactor0
+\cf2 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sa167\partightenfactor0
+\cf2 Multiplexed Pots\
+\pard\pardeftab720\partightenfactor0
+\cf2 Pot\cf2 (Mux mux, muxpin, command, control, channel)\cf2 \
+\pard\pardeftab720\qc\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sa350\partightenfactor0
+\cf2 Current example:\
+\pard\pardeftab720\partightenfactor0
+\cf2 Pot \cf2 MPO3\cf2 (M2, \cf2 2\cf2 , \cf2 0\cf2 , \cf2 11\cf2 , \cf2 1\cf2 );\cf2 \
+\pard\pardeftab720\qc\partightenfactor0
+\cf2 \
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \tamart480 \tamarb480 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clcbpat11 \clwWidth2535\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx2880
+\clvertalb \clcbpat11 \clwWidth4628\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx5760
+\clvertalb \clcbpat11 \clwWidth3137\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 Parameter\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 Meaning\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 Current Value\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \tamart480 \tamarb480 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt\clvertalbase \clshdrawnil \clwWidth2535\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx2880
+\clvertalt\clvertalbase \clshdrawnil \clwWidth4628\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx5760
+\clvertalt\clvertalbase \clshdrawnil \clwWidth3137\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 mux\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 Which mux (M1 or M2)\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 M2\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \tamart480 \tamarb480 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt\clvertalbase \clshdrawnil \clwWidth2535\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx2880
+\clvertalt\clvertalbase \clshdrawnil \clwWidth4628\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx5760
+\clvertalt\clvertalbase \clshdrawnil \clwWidth3137\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 muxpin\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 Mux pin 0-15\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 2\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \tamart480 \tamarb480 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt\clvertalbase \clshdrawnil \clwWidth2535\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx2880
+\clvertalt\clvertalbase \clshdrawnil \clwWidth4628\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx5760
+\clvertalt\clvertalbase \clshdrawnil \clwWidth3137\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 command\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 Future use (leave 0)\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 0\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \tamart480 \tamarb480 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt\clvertalbase \clshdrawnil \clwWidth2535\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx2880
+\clvertalt\clvertalbase \clshdrawnil \clwWidth4628\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx5760
+\clvertalt\clvertalbase \clshdrawnil \clwWidth3137\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 control\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 CC number\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 11\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \tamart480 \tamarb480 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalt\clvertalbase \clshdrawnil \clwWidth2535\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx2880
+\clvertalt\clvertalbase \clshdrawnil \clwWidth4628\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx5760
+\clvertalt\clvertalbase \clshdrawnil \clwWidth3137\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 channel\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 MIDI channel\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 1\cell \lastrow\row
+\pard\pardeftab720\sa350\partightenfactor0
+\cf2 To change: For example, to make MPO3 control CC#50 on channel 2:\
+\pard\pardeftab720\partightenfactor0
+\cf2 Pot \cf2 MPO3\cf2 (M2, \cf2 2\cf2 , \cf2 0\cf2 , \cf2 50\cf2 , \cf2 2\cf2 );\cf2 \
+\pard\pardeftab720\qc\partightenfactor0
+\cf2 \
+\pard\pardeftab720\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sa280\partightenfactor0
+\cf2 MIDI Channel Notes\
+\pard\pardeftab720\sa350\partightenfactor0
+\cf2 MIDI channels are 1-16 in the constructor (what you see on your iPad/DAW), but internally the sketch sends them as 0-15 in the MIDI message. The constructor takes the user-facing 1-16 value and passes it directly \'97 actually looking at the code more carefully:\
+In the wrapper functions:\
+\pard\pardeftab720\partightenfactor0
+\cf2 midiSendNoteOn\cf2 (BUTTONS[i]->Bchannel, BUTTONS[i]->Bvalue, \cf2 127\cf2 );\cf2 \
+\pard\pardeftab720\qc\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sa350\partightenfactor0
+\cf2 And inside:\
+\pard\pardeftab720\partightenfactor0
+\cf2 midiEventPacket_t event = \{\cf2 0x09\cf2 , \cf2 0x90\cf2  | channel, note, velocity\};\cf2 \
+\pard\pardeftab720\qc\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sa350\partightenfactor0
+\cf2 Since the constructors store whatever you pass as channel, and it gets OR'd with 0x90 (which is already channel 0), you should use 0-15 in the constructor for the channel parameter.\
+Wait \'97 let me check the original sketch more carefully. The original sketch used values like 1 for channel (e.g., Pot PO1(A0, 0, 4, 1)). This means the original author was using 1-16 and the MIDI status byte would be 0x91 for channel 2, not 0x90 for channel 1. Most DAWs and iPads expect 1-16, and 0xB1 = channel 2 in standard MIDI spec... but 0x90 | 1 = 0x91 which IS channel 2 in standard MIDI.\
+So if you want channel 1, use 0 in the constructor. If you want channel 2, use 1. This is consistent with standard MIDI where:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa140\partightenfactor0
+\ls1\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\cf2 \expnd0\expndtw0\kerning0
+Status byte 0x90 = Channel 1\
+\ls1\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\cf2 \expnd0\expndtw0\kerning0
+Status byte 0x91 = Channel 2\
+\ls1\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\cf2 \expnd0\expndtw0\kerning0
+etc.\
+\pard\pardeftab720\sa350\partightenfactor0
+\cf2 So the current value of 1 in most constructors means MIDI channel 2. To set it to channel 1, change it to 0.\
+\pard\pardeftab720\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sa280\partightenfactor0
+\cf2 Practical Example\
+\pard\pardeftab720\sa350\partightenfactor0
+\cf2 If you want your first mux button to play Note 72 on channel 1 (instead of Note 36 on channel 10):\
+Change this line:\
+\pard\pardeftab720\partightenfactor0
+\cf2 Button \cf2 MBU1\cf2 (M1, \cf2 0\cf2 , \cf2 0\cf2 , \cf2 36\cf2 , \cf2 10\cf2 , \cf2 5\cf2 );\cf2 \
+\pard\pardeftab720\qc\partightenfactor0
+\cf2 \
+\pard\pardeftab720\sa350\partightenfactor0
+\cf2 To:\
+\pard\pardeftab720\partightenfactor0
+\cf2 Button \cf2 MBU1\cf2 (M1, \cf2 0\cf2 , \cf2 0\cf2 , \cf2 72\cf2 , \cf2 0\cf2 , \cf2 5\cf2 );\cf2 \
+\pard\pardeftab720\qc\partightenfactor0
+\cf2 \
+\pard\pardeftab720\partightenfactor0
+\cf2 That's the only change needed. The rest of your code uses the stored values automatically.Touch each sensor individually and observe:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa140\partightenfactor0
+\ls2\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\cf2 \expnd0\expndtw0\kerning0
+Red (D10) 
+\f1 \cf2 \uc0\u8594 
+\f0 \cf2  only the ribbon on M2 Y2 should affect it\
+\ls2\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\cf2 \expnd0\expndtw0\kerning0
+Yellow (D11) 
+\f1 \cf2 \uc0\u8594 
+\f0 \cf2  only the ribbon on M2 Y3\
+\ls2\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\cf2 \expnd0\expndtw0\kerning0
+Blue (D12) 
+\f1 \cf2 \uc0\u8594 
+\f0 \cf2  only the FSR on M2 Y4\
+\ls2\ilvl0\cf2 \kerning1\expnd0\expndtw0 {\listtext	\uc0\u8226 	}\cf2 \expnd0\expndtw0\kerning0
+Green (D9) 
+\f1 \cf2 \uc0\u8594 
+\f0 \cf2  only the FSR on M2 Y5\
+\pard\pardeftab720\sa350\partightenfactor0
+\cf2 If any LED still lights for the wrong sensor, the touchThreshold (currently 25) may need raising. The chart below shows what to tweak if needed:\
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \tamart480 \tamarb480 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalb \clcbpat11 \clwWidth3319\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx2880
+\clvertalb \clcbpat11 \clwWidth2577\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx5760
+\clvertalb \clcbpat11 \clwWidth4403\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 Constant\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 File\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 Effect\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \tamart480 \tamarb480 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt\clvertalbase \clshdrawnil \clwWidth3319\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx2880
+\clvertalt\clvertalbase \clshdrawnil \clwWidth2577\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx5760
+\clvertalt\clvertalbase \clshdrawnil \clwWidth4403\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 touchThreshold\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 .ino updateLeds()\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 Higher = less crosstalk, less sensitive\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \tamart480 \tamarb480 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt\clvertalbase \clshdrawnil \clwWidth3319\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx2880
+\clvertalt\clvertalbase \clshdrawnil \clwWidth2577\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx5760
+\clvertalt\clvertalbase \clshdrawnil \clwWidth4403\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 NUM_SAMPLES in getRawValue()\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 Controller.cpp\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 More = smoother but slower LED response\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \tamart480 \tamarb480 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt\clvertalbase \clshdrawnil \clwWidth3319\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx2880
+\clvertalt\clvertalbase \clshdrawnil \clwWidth2577\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx5760
+\clvertalt\clvertalbase \clshdrawnil \clwWidth4403\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 Calibration delayMicroseconds(100)\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 Controller.cpp calibrate()\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 Longer = better channel isolation during calibration\cell \row
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \tamart480 \tamarb480 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalt\clvertalbase \clshdrawnil \clwWidth3319\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx2880
+\clvertalt\clvertalbase \clshdrawnil \clwWidth2577\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx5760
+\clvertalt\clvertalbase \clshdrawnil \clwWidth4403\clftsWidth3 \clbrdrt\brdrs\brdrw20\brdrcf12 \clbrdrl\brdrs\brdrw20\brdrcf12 \clbrdrb\brdrs\brdrw20\brdrcf12 \clbrdrr\brdrs\brdrw20\brdrcf12 \clpadt160 \clpadl160 \clpadb160 \clpadr160 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 DEADZONE in getValue()\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 Controller.cpp\cell 
+\pard\intbl\itap1\pardeftab720\partightenfactor0
+\cf2 Higher = more stable MIDI CC, less jitter\cell \lastrow\row
+}

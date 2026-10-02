@@ -1,0 +1,17 @@
+4051 8 ch mux
+VEE - GND
+VCC - 3.3V 
+GND - GND
+Z - A5
+S0 - D2
+S1 - D3
+S2 - D4 
+E - GND
+
+4067 16 ch mux
+Power and GRND as above.
+S0 - D2
+S1 - D3
+S2 - D4
+S3 - D5
+Signal - A4
